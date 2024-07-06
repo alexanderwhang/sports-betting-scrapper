@@ -7,11 +7,11 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-web = 'https://app.prizepicks.com/'
+url = 'https://app.prizepicks.com/'
 path = '/Users/alex/Downloads/chromedriver_mac64/chromedriver'
 
 driver = webdriver.Chrome(path)
-driver.get(web)
+driver.get(url)
 
 sounds_good = driver.find_element('xpath', '/html/body/div[2]/div[3]/div/div/div[3]/button')
 sounds_good.click()
